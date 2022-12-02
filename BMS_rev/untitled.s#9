@@ -12568,12 +12568,22 @@ type 0309, grid 2.5 mm</description>
 <wire x1="71.12" y1="149.86" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
 <label x="68.58" y="149.86" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CONN2P-3.5PI5" gate="G$1" pin="P0"/>
+<wire x1="-22.86" y1="-86.36" x2="-22.86" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-22.86" y="-83.82" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="B-" class="0">
 <segment>
 <pinref part="TTL-RS1" gate="G$1" pin="B"/>
 <wire x1="71.12" y1="144.78" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
 <label x="68.58" y="144.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CONN2P-3.5PI5" gate="G$1" pin="P1"/>
+<wire x1="-25.4" y1="-86.36" x2="-25.4" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-25.4" y="-83.82" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="RX_RS485" class="0">
@@ -12598,18 +12608,6 @@ type 0309, grid 2.5 mm</description>
 <pinref part="TTL-RS1" gate="G$1" pin="TX"/>
 <wire x1="96.52" y1="144.78" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
 <label x="99.06" y="144.78" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="CONN2P-3.5PI5" gate="G$1" pin="P0"/>
-<wire x1="-22.86" y1="-86.36" x2="-22.86" y2="-83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="CONN2P-3.5PI5" gate="G$1" pin="P1"/>
-<wire x1="-25.4" y1="-86.36" x2="-25.4" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">

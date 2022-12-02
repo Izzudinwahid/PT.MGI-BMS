@@ -11932,6 +11932,8 @@ type 0309, grid 2.5 mm</description>
 <part name="CONN2P-3.5PI3" library="CONN2P-3.5PI" deviceset="CONN2P-3.5PI" device=""/>
 <part name="CONN2P-3.5PI5" library="CONN2P-3.5PI" deviceset="CONN2P-3.5PI" device=""/>
 <part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:6240587/1"/>
+<part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:6240587/1"/>
+<part name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:6240587/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -12044,6 +12046,14 @@ type 0309, grid 2.5 mm</description>
 <instance part="R1" gate="G$1" x="-40.64" y="-78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="-42.1386" y="-82.55" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-37.338" y="-82.55" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="-40.64" y="177.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="-42.1386" y="173.99" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-37.338" y="173.99" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="-35.56" y="177.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="-37.0586" y="173.99" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-32.258" y="173.99" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -12280,6 +12290,12 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-40.64" y1="-73.66" x2="-40.64" y2="-71.12" width="0.1524" layer="91"/>
 <label x="-40.64" y="-71.12" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="182.88" x2="-35.56" y2="182.88" width="0.1524" layer="91"/>
+<label x="-38.1" y="182.88" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="LORA_DI1" class="0">
 <segment>
@@ -12374,6 +12390,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-33.02" y1="-86.36" x2="-33.02" y2="-83.82" width="0.1524" layer="91"/>
 <label x="-33.02" y="-83.82" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="-35.56" y1="172.72" x2="-35.56" y2="170.18" width="0.1524" layer="91"/>
+<label x="-35.56" y="170.18" size="0.8128" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -12396,6 +12417,11 @@ type 0309, grid 2.5 mm</description>
 <pinref part="CONN2P-3.5PI2" gate="G$1" pin="P0"/>
 <wire x1="-30.48" y1="-86.36" x2="-30.48" y2="-83.82" width="0.1524" layer="91"/>
 <label x="-30.48" y="-83.82" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="172.72" x2="-40.64" y2="170.18" width="0.1524" layer="91"/>
+<label x="-40.64" y="170.18" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="LED_WARNING" class="0">

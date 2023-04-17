@@ -8555,12 +8555,6 @@ Source: AVX .. aphvc.pdf</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -8568,19 +8562,6 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -11907,7 +11888,6 @@ type 0309, grid 2.5 mm</description>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="U.FL-R-SMT_01_" deviceset="U.FL-R-SMT(01)" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11975,9 +11955,6 @@ type 0309, grid 2.5 mm</description>
 <instance part="R29" gate="G$1" x="58.42" y="91.44" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.23" y="89.9414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="62.23" y="94.742" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+1" gate="VCC" x="12.7" y="96.52" smashed="yes">
-<attribute name="VALUE" x="10.16" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND1" gate="1" x="12.7" y="68.58" smashed="yes">
 <attribute name="VALUE" x="10.16" y="66.04" size="1.778" layer="96"/>
@@ -12064,26 +12041,6 @@ type 0309, grid 2.5 mm</description>
 <pinref part="U2" gate="A" pin="A0"/>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="86.36" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="VDD"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="15.24" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="91.44" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="76.2" x2="0" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="0" y1="76.2" x2="0" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="0" y1="78.74" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="78.74" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="93.98" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="93.98" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="91.44" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
-<junction x="15.24" y="91.44"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12366,6 +12323,23 @@ type 0309, grid 2.5 mm</description>
 <pinref part="TTL-RS1" gate="G$1" pin="VCC"/>
 <wire x1="96.52" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
 <label x="99.06" y="139.7" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="VDD"/>
+<wire x1="15.24" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="76.2" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="0" y1="76.2" x2="0" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="0" y1="78.74" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="78.74" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="93.98" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="93.98" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="91.44" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
+<junction x="15.24" y="91.44"/>
+<label x="12.7" y="91.44" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">

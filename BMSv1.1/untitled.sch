@@ -19112,8 +19112,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <wire x1="9" y1="0" x2="9" y2="9.5" width="0.1524" layer="21"/>
 <wire x1="9" y1="9.5" x2="0" y2="9.5" width="0.1524" layer="21"/>
 <wire x1="0" y1="9.5" x2="0" y2="0" width="0.1524" layer="21"/>
-<pad name="P0" x="2.52143125" y="0.01635" drill="0.8" diameter="1.4224"/>
-<pad name="P1" x="6.32143125" y="0.01635" drill="0.8" diameter="1.4224"/>
+<pad name="P0" x="2.52143125" y="0.01635" drill="1.4"/>
+<pad name="P1" x="6.32143125" y="0.01635" drill="1.4"/>
 </package>
 </packages>
 <symbols>
@@ -19152,14 +19152,14 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <wire x1="3" y1="9.5" x2="-29.9" y2="9.5" width="0.1524" layer="21"/>
 <wire x1="-29.9" y1="9.5" x2="-29.9" y2="0" width="0.1524" layer="21"/>
 <wire x1="-29.9" y1="0" x2="3" y2="0" width="0.1524" layer="21"/>
-<pad name="P1" x="-26.75" y="0" drill="0.8" diameter="1.6764"/>
-<pad name="P2" x="-23" y="0" drill="0.8" diameter="1.6764"/>
-<pad name="P3" x="-19.2" y="0" drill="0.8" diameter="1.6764"/>
-<pad name="P4" x="-15.4" y="0" drill="0.8" diameter="1.6764"/>
-<pad name="P5" x="-11.6" y="0" drill="0.8" diameter="1.6764"/>
-<pad name="P6" x="-7.8" y="0" drill="0.8" diameter="1.6764"/>
-<pad name="P7" x="-4" y="0" drill="0.8" diameter="1.6764"/>
-<pad name="P8" x="-0.2" y="0" drill="0.8" diameter="1.6764"/>
+<pad name="P1" x="-26.75" y="0" drill="1.4"/>
+<pad name="P2" x="-23" y="0" drill="1.4"/>
+<pad name="P3" x="-19.2" y="0" drill="1.4"/>
+<pad name="P4" x="-15.4" y="0" drill="1.4"/>
+<pad name="P5" x="-11.6" y="0" drill="1.4"/>
+<pad name="P6" x="-7.8" y="0" drill="1.4"/>
+<pad name="P7" x="-4" y="0" drill="1.4"/>
+<pad name="P8" x="-0.2" y="0" drill="1.4"/>
 </package>
 </packages>
 <symbols>
